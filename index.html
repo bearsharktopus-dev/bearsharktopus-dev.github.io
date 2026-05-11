@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bearsharktopus Studios LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Instrument+Serif&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #0e0e11;
+            --surface: #16161a;
+            --border: #2a2a30;
+            --text: #c8c8cf;
+            --text-muted: #7a7a84;
+            --accent: #a0a0aa;
+            --heading: #e4e4e8;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 80px 24px 120px;
+        }
+
+        .studio-name {
+            font-family: 'Instrument Serif', serif;
+            font-size: 2rem;
+            color: var(--heading);
+            letter-spacing: -0.01em;
+            margin-bottom: 8px;
+        }
+
+        .llc {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 48px;
+        }
+
+        .divider {
+            width: 32px;
+            height: 1px;
+            background: var(--border);
+            margin: 40px 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .services {
+            margin: 40px 0;
+            padding: 24px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .services-label {
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .service-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .service-list li {
+            font-size: 0.85rem;
+            color: var(--accent);
+            padding: 6px 14px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            background: var(--surface);
+        }
+
+        .footer {
+            margin-top: 80px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1 class="studio-name">Bearsharktopus Studios</h1>
+        <span class="llc">Limited Liability Company</span>
+
+        <p>
+            Bearsharktopus Studios provides web development, hosting, and
+            ongoing technical administration for independently operated
+            web platforms.
+        </p>
+
+        <p>
+            The sites we build and maintain are free for end users.
+            Site administrators contract with us for development, infrastructure,
+            and continued upkeep. Users who wish to support the ongoing operation
+            of a platform may contribute through on-site support links — these
+            contributions are processed on behalf of the site operator to cover
+            the cost of hosting and administration services.
+        </p>
+
+        <div class="services">
+            <div class="services-label">Services</div>
+            <ul class="service-list">
+                <li>Web Development</li>
+                <li>Site Administration</li>
+                <li>Hosting &amp; Infrastructure</li>
+                <li>Platform Maintenance</li>
+                <li>Technical Consulting</li>
+            </ul>
+        </div>
+
+        <p>
+            All transactions processed through our payment provider reflect
+            fees for services rendered or user contributions toward
+            platform operating costs.
+        </p>
+
+        <div class="footer">
+            &copy; 2026 Bearsharktopus Studios LLC
+        </div>
+    </div>
+</body>
+</html>
