@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bearsharktopus Studios LLC</title>
+    <title>Bearsharktopus Studios LLC — Web Development Services</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Instrument+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after {
             margin: 0;
@@ -58,48 +58,62 @@
             margin-bottom: 48px;
         }
 
-        .divider {
-            width: 32px;
-            height: 1px;
-            background: var(--border);
-            margin: 40px 0;
-        }
-
         p {
             margin-bottom: 20px;
             font-size: 0.95rem;
         }
 
-        .services {
-            margin: 40px 0;
-            padding: 24px 0;
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .services-label {
+        h2 {
+            font-family: 'DM Sans', sans-serif;
             font-size: 0.7rem;
-            font-weight: 500;
+            font-weight: 600;
             letter-spacing: 0.1em;
             text-transform: uppercase;
             color: var(--text-muted);
             margin-bottom: 16px;
+            margin-top: 48px;
         }
 
-        .service-list {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .service-list li {
-            font-size: 0.85rem;
-            color: var(--accent);
-            padding: 6px 14px;
+        .service-block {
+            padding: 20px;
             border: 1px solid var(--border);
-            border-radius: 4px;
+            border-radius: 6px;
             background: var(--surface);
+            margin-bottom: 12px;
+        }
+
+        .service-block .service-title {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--heading);
+            margin-bottom: 6px;
+        }
+
+        .service-block .service-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .payment-info {
+            margin-top: 48px;
+            padding: 24px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: var(--surface);
+        }
+
+        .payment-info h2 {
+            margin-top: 0;
+        }
+
+        .payment-info p {
+            font-size: 0.88rem;
+            margin-bottom: 14px;
+        }
+
+        .payment-info p:last-child {
+            margin-bottom: 0;
         }
 
         .footer {
@@ -112,42 +126,69 @@
 <body>
     <div class="page">
         <h1 class="studio-name">Bearsharktopus Studios</h1>
-        <span class="llc">Limited Liability Company</span>
+        <span class="llc">Limited Liability Company &mdash; Web Development Services</span>
 
         <p>
-            Bearsharktopus Studios provides web development, hosting, and
-            ongoing technical administration for independently operated
-            web platforms.
+            Bearsharktopus Studios LLC is a for-profit web development and
+            systems administration business. We build, host, and maintain
+            web applications for independent site operators.
         </p>
 
-        <p>
-            The sites we build and maintain are free for end users.
-            Site administrators contract with us for development, infrastructure,
-            and continued upkeep. Users who wish to support the ongoing operation
-            of a platform may contribute through on-site support links — these
-            contributions are processed on behalf of the site operator to cover
-            the cost of hosting and administration services.
-        </p>
+        <h2>Services Offered</h2>
 
-        <div class="services">
-            <div class="services-label">Services</div>
-            <ul class="service-list">
-                <li>Web Development</li>
-                <li>Site Administration</li>
-                <li>Hosting &amp; Infrastructure</li>
-                <li>Platform Maintenance</li>
-                <li>Technical Consulting</li>
-            </ul>
+        <div class="service-block">
+            <div class="service-title">Web Application Development</div>
+            <div class="service-desc">
+                Custom web application design and development using
+                Ruby on Rails, Python, Django, and modern frontend frameworks.
+                Full-stack builds from prototype through production deployment.
+            </div>
         </div>
 
-        <p>
-            All transactions processed through our payment provider reflect
-            fees for services rendered or user contributions toward
-            platform operating costs.
-        </p>
+        <div class="service-block">
+            <div class="service-title">Hosting &amp; Infrastructure</div>
+            <div class="service-desc">
+                Server provisioning, configuration, and ongoing infrastructure
+                management. Domain setup, SSL certificates, database
+                administration, and deployment pipelines.
+            </div>
+        </div>
+
+        <div class="service-block">
+            <div class="service-title">Site Maintenance &amp; Administration</div>
+            <div class="service-desc">
+                Ongoing technical support, performance optimization, security
+                updates, backups, and day-to-day systems administration for
+                client web platforms.
+            </div>
+        </div>
+
+        <div class="service-block">
+            <div class="service-title">Technical Consulting</div>
+            <div class="service-desc">
+                Architecture planning, technology selection, code review,
+                and technical advisory services for independent web projects.
+            </div>
+        </div>
+
+        <div class="payment-info">
+            <h2>How Payments Work</h2>
+            <p>
+                Site operators pay Bearsharktopus Studios for development
+                and ongoing administration of their platforms. These are
+                standard payments for services rendered.
+            </p>
+            <p>
+                Some client sites are free for end users and include optional
+                support links. When users choose to contribute, their payments
+                are processed on behalf of the site operator and applied toward
+                platform operating costs, including hosting and administration
+                fees. These are not charitable donations.
+            </p>
+        </div>
 
         <div class="footer">
-            &copy; 2026 Bearsharktopus Studios LLC
+            &copy; 2026 Bearsharktopus Studios LLC. All rights reserved.
         </div>
     </div>
 </body>
